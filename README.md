@@ -1,12 +1,14 @@
 # FLinspirer_Lenovo
 
+##ç°åœ¨ç”¨ä¸äº† è¯·ç­‰å¾…ä¸‹ä¸€ç‰ˆæœ¬
+
 Hook Linspirer's mia/csdk invocation.
 Only works on Lenovo devices.
 
 #### Reference
 [Xposed](https://github.com/rovo89/Xposed)
 
-[Ô­´´ °²×¿Hookº¯ÊıµÄ¸´ÔÓ²ÎÊıÈçºÎ¸ø¶¨£¿](https://bbs.pediy.com/thread-215039.htm)
+[åŸåˆ› å®‰å“Hookå‡½æ•°çš„å¤æ‚å‚æ•°å¦‚ä½•ç»™å®šï¼Ÿ](https://bbs.pediy.com/thread-215039.htm)
 
 #### Example
 ![image](https://github.com/Tonyha7/FLinspirer_Lenovo/blob/e00462525375ec0c0e8573f0f6fffa5a5aef4d39/images/20211115110157.jpg)

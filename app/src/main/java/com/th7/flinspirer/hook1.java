@@ -6,12 +6,14 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
+import de.robv.android.xposed.IXposedHookZygoteInit;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 public class hook1 implements IXposedHookLoadPackage {
+
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam loadPackageParam) throws Throwable {
         if (loadPackageParam.packageName.equals("com.android.launcher3")) {
             Log.i("flinspirer", "报告！已打入领创内部！");
@@ -24,7 +26,7 @@ public class hook1 implements IXposedHookLoadPackage {
                     sb.append("LoadClass: ");
                     sb.append(clazzName);
                     //android.app.*
-                    if (clazzName.contains("android.app")) {
+                    if (clazzName.contains("android.app.mia.MiaMdmPolicyManager")&clazzName.contains("android.app.csdk.CSDKManager")) {
                         Method[] mds = clazz.getDeclaredMethods();
                         for (int i = 0; i < mds.length; i++) {
                             final Method md = mds[i];
@@ -50,4 +52,6 @@ public class hook1 implements IXposedHookLoadPackage {
         }
     }
 }
+
+
 

@@ -1,7 +1,5 @@
 # FLinspirer_Lenovo
 
-##现在用不了 请等待下一版本
-
 Hook Linspirer's mia/csdk invocation.
 Only works on Lenovo devices.
 
